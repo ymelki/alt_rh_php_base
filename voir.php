@@ -1,4 +1,3 @@
-
 <?php
 include "header.php";
 require_once "function.php";
@@ -7,10 +6,7 @@ $monproduit=getEntite("product",$_GET['id']);
 ?>
 
 
-<div class="card-group">
-
-    
- 
+<div class="card-group"> 
         <div class="card">
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
@@ -21,9 +17,6 @@ $monproduit=getEntite("product",$_GET['id']);
             <small class="text-muted"><?= $monproduit['price']?></small>
             <a href=voir.php?id=<?=$monproduit['id']?>>Voir</a>
             </div>
-        </div> 
-       
-
-  
+        </div>  
 </div>
 </div>
