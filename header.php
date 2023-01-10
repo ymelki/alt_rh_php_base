@@ -23,7 +23,7 @@
             <a class="nav-link active" aria-current="page" href="liste_users.php">Liste des users</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="inscription.php">Inscription</a>
             </li>
             <li class="nav-item">
             <a class="nav-link disabled">Disabled</a>
