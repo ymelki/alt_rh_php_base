@@ -3,7 +3,7 @@
 include "header.php";
 
 require_once "function.php";
- 
+
 
 ?>
 
@@ -31,8 +31,10 @@ if (  (isset($_POST['email']) && (isset($_POST['pwd'])))) {
      $user=$resultat->fetch();
      var_dump($user);
 
+     // si le mot de passe renseigné dans le form == mdp de la BD
+     // if ($password == $user['password'])
      if (password_verify(   $password   , $user['password'])) {
-         $_SESSION["user"]=$email;
+         $_SESSION["user"]=$email;   
          header("Location: index.php");
      
         // stocke dans une variable de session une donnée 
@@ -40,7 +42,7 @@ if (  (isset($_POST['email']) && (isset($_POST['pwd'])))) {
         // sesion_start() a ne pas oublier
      } 
      else {
-        echo 'Password is not valid!';
+        echo 'Password OR EMAIL is not valid!';
      }
 
      /*if (($mail==$rows[0]['email']) && (password_verify($mdp, $rows[0]['pwd'] ))   ){

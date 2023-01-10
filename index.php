@@ -14,7 +14,7 @@ require_once "function.php";
 $mesproduits=getEntite("product",0);
  
 
-
+var_dump($mesproduits); 
 ?>
 
 <div class="card-group">
