@@ -1,34 +1,34 @@
 <?php
 
 require_once __DIR__.'/../../function.php';
-function deleteProduit($id){
+function deleteUser($id){
     $PDO=connect_bd(); 
     // Récupère les données de la table produits
-    $requete1 = " DELETE FROM Product WHERE id = ".$id;
+    $requete1 = " DELETE FROM user WHERE id = ".$id;
 
     $stmt= $PDO->prepare($requete1);
     $stmt->execute(); 
 }
 
-function newProduit(){
+function newUser(){
     
 }
-function getProduit(){
+function getUsers(){
     $PDO=connect_bd();
    
 
     // Récupère les données de la table produits
-    $requete1 = "SELECT * FROM product";
+    $requete1 = "SELECT * FROM user";
 
     // le prepare (avec le execute) est comme un query mais beaucoup plus sécurisé (voir ci-dessous)
     // l'opérateur flèche -> permer d'accéder aux éléments d'une classe (méthode ou attribut)
     $resultat = $PDO->prepare($requete1);
     $resultat->execute();
      
-    $mesproduits=$resultat->fetchAll();
+    $users=$resultat->fetchAll();
     
 
-    return  $mesproduits;
+    return  $users;
 
 }
 ?>

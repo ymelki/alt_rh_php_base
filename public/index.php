@@ -40,10 +40,22 @@ if ($path=='/catalogue'){
     afficher_produits();
  }
 
+ if ($path=='/users'){ 
+    echo "vous etes sur la page users";
+    include __DIR__.'/../src/Controller/UsersController.php';
+    afficher_users();
+ }
+
+
  if ($path=='/inscription'){
     echo "vous etes sur la page inscription";
  }
 
  if ($path=='/authentification'){
     echo "vous etes sur la page authentification";
+ }
+
+ if ($path=='/delete_produit'){
+    include __DIR__.'/../src/Controller/CatalogController.php';
+    delete_produits();
  }

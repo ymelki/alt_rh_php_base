@@ -12,6 +12,8 @@ foreach ($mesproduits as $mes) { ?>
         <div class="card-footer">
         <small class="text-muted"><?= $mes['price']?></small>
         <a href=voir.php?id=<?=$mes['id']?>>Voir</a>
+        <a href=/delete_produit?id=<?=$mes['id']?>>Supprimer</a>
+
         </div>
     </div> 
     <?php } ?>
