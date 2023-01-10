@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,6 +25,9 @@
             </li>
             <li class="nav-item">
             <a class="nav-link" href="inscription.php">Inscription</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="logout.php">Deconnexion</a>
             </li>
             <li class="nav-item">
             <a class="nav-link disabled">Disabled</a>
