@@ -33,6 +33,11 @@
             <a class="nav-link disabled">Disabled</a>
             </li>
         </ul>
+        <?php if (isset($_SESSION["user"])){
+                echo "Vous etes connecte en tant que ".$_SESSION["user"];
+            } else {
+                echo " pense à t'inscrire ! ";
+            } ?>
         </div>
     </div>
     </nav>

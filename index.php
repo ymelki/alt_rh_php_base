@@ -8,6 +8,7 @@ require_once "function.php";
 <p class="h1">Bienvenue sur la home .</p>
 
 <?php
+
  
              
 $mesproduits=getEntite("product",0);

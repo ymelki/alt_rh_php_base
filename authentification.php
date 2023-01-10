@@ -32,8 +32,9 @@ if (  (isset($_POST['email']) && (isset($_POST['pwd'])))) {
      var_dump($user);
 
      if (password_verify(   $password   , $user['password'])) {
-        echo 'Password is valid!';
-        $_SESSION["user"]=$email;
+         $_SESSION["user"]=$email;
+         header("Location: index.php");
+     
         // stocke dans une variable de session une donnée 
         // qui persistera jusqu'a que on lui disent de plus exister
         // sesion_start() a ne pas oublier
