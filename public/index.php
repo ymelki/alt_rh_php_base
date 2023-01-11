@@ -59,3 +59,11 @@ if ($path=='/catalogue'){
     include __DIR__.'/../src/Controller/CatalogController.php';
     delete_produits();
  }
+ if ($path=='/delete_user'){
+    include __DIR__.'/../src/Controller/UsersController.php';
+    delete_users();
+ }
+ if ($path=='/voir'){
+    include __DIR__.'/../src/Controller/CatalogController.php';
+    afficherunproduit();
+ }

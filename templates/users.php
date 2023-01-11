@@ -10,6 +10,7 @@ foreach ($mesusers as $mes) { ?>
         <p class="card-text"><?= $mes['email']?></p>
         </div>
         <div class="card-footer"> 
+        <a href=/delete_user?id=<?=$mes['id']?>>Supprimer</a>
         </div>
     </div> 
     <?php } ?>
